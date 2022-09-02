@@ -86,10 +86,17 @@ const Endpoint = {
     postYouthWing: (data) => {
         return axios.post(`/Home/CreateYouthWing`,data, headers);
     },
-
+    postCodeNumber: (data) => {
+        return axios.get(`Home/GetStaffByCodeNumber?CodeNumber=${data}`, headers);
+    },
+    
     postStaffDetails: (data) => {
         return axios.post(`/Home/CreateStaff`,data, fileHeaders);
     },
+    postEditStaff: (data) => {
+        return axios.post(`/Home/EditStaff`,data, fileHeaders);
+    },
+   
 
     
    

@@ -161,7 +161,7 @@ const FrontHeader = (props) => {
                                     {/* <i className='fa fa-arrow-right'/> */}
                                     <span className="nav-link-inner--text">Admin</span>
                                 </NavLink>
-                                <NavLink className="nav-link-icon" to="/staff_form" tag={Link} >
+                                <NavLink className="nav-link-icon" to="/staff_authentication" tag={Link} >
                                     <span className="nav-link-inner--text">Staff Form</span>
                                 </NavLink>
 
@@ -195,7 +195,7 @@ const FrontHeader = (props) => {
                         {/* <Link to="/recruitment">Recruitment</Link> */}
                         <Link to="/contactus">Contact us</Link>
                         <Link to="/admin_signin">Admin</Link>
-                        <Link to="/staff_form">Staff Form</Link>
+                        <Link to="/staff_authentication">Staff Form</Link>
 
                         <br />
                         <br />
