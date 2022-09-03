@@ -25,14 +25,12 @@ export class App extends Component {
         return (
             <Router>
                 <ScrollToTop>
-                    <Switch>
-                        
+                    <Switch>   
                         {/* <AuthRoute path="/admin" authorized={[userType.superadmin]} component={SuperAdminBody}/> */}
                         {/* <AuthRoute path="/schooladmin" authorized={[userType.schooladmin]} component={SchoolAdminBody}/> */}
                         <AuthRoute path="/admin" authorized={[userType.hod]} component={HODBody}/>
                         {/* <AuthRoute path="/instructor" authorized={[userType.instructor]} component={InstructorBody}/> */}
-                        {/* <AuthRoute path="/student" authorized={[userType.student]} component={StudentBody}/> */}
-                        
+                        {/* <AuthRoute path="/student" authorized={[userType.student]} component={StudentBody}/> */}  
                         <Route component={FrontBody}/>
                     </Switch>
                     

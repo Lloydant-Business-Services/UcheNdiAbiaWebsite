@@ -31,6 +31,7 @@ import SigninMain from '../pages/Front/signinMain';
 import ProfileBio from '../pages/Front/profilebio';
 import StaffIDCard from '../pages/Front/StaffIDCard';
 import StaffAuth from '../pages/Front/StaffAuth';
+import IdentityValidation from '../pages/Front/IdentityValidation';
 
 import Admin from '../pages/Front/admin';
 
@@ -62,6 +63,7 @@ export class FrontBody extends Component {
                             <Route path={'/profile_bio'} component={ProfileBio}/>
                             <Route path={'/staff_form'} component={StaffIDCard}/>
                             <Route path={'/staff_authentication'} component={StaffAuth}/>
+                            <Route  path={'/identity_validation'} component={IdentityValidation}/>
                             {/* <Route path={'/admin'} component={Admin}/> */}
                             <Route component={PageNotFound}/>
                         </Switch>
